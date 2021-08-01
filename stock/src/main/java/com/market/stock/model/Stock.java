@@ -25,6 +25,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class Stock {
 	@Id
+	@ApiModelProperty(dataType = "String", example = "1011")
 	private String id;
 	
 	@Indexed

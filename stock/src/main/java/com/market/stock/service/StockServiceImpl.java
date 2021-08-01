@@ -27,7 +27,7 @@ public class StockServiceImpl implements StockService {
 	@Autowired
 	private RestTemplate restTemplate;
 	
-	@Value("${COMPANY_URI:localhost:1111}")
+	@Value("${COMPANY_URI:localhost}")
 	private String companyUri;
 	
 	@Override

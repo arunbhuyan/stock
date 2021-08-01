@@ -28,12 +28,6 @@ public class StockController {
 	@Autowired
 	private StockService stockService;
 	
-	@GetMapping
-	public ResponseEntity<?> get(){
-		//logger.warn("companyCode");
-		return new ResponseEntity<String>("test", HttpStatus.OK);
-	}
-	
 	@PostMapping(value = "/add/{companyCode}")
 	public ResponseEntity<?> newStock(@RequestBody Stock stock, @PathVariable(name="companyCode") Integer code){
 		
